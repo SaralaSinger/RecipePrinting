@@ -22,8 +22,8 @@ const RecipeDetails = () => {
     const renderIngredients = () => {
         if (recipe.ingredients && recipe.ingredients.length > 0) {
             return (
-                <div className="card-text fs-5">
-                    <strong>Ingredients:</strong>
+                <>
+                    <h3>Ingredients:</h3>
                     <ul>
                         {recipe.ingredients?.map((ingredient) => (
                             <li key={ingredient.id}>
@@ -31,7 +31,7 @@ const RecipeDetails = () => {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </>
             );
         }
     };
